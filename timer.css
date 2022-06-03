@@ -1,0 +1,100 @@
+:root {
+  --roxo-escuro: #231942;
+  --lilas: #5E548E;
+  --lilas-escuro: #9F86C0;
+  --rosa: #E0B1CB;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background-color: var(--roxo-escuro);
+}
+button {
+  font-family: 'Roboto', sans-serif;
+}
+.container {
+  width: 800px;
+  margin: auto;
+  margin-top: 50px;
+}
+.container h1 {
+  text-transform: uppercase;
+  font-size: 50px;
+  color: var(--rosa);
+  text-align: center;
+  margin: 0 0 25px 0;
+  font-weight: 900;
+}
+.box {
+  background-color: var(--lilas);
+  padding: 25px;
+  border-radius: 20px;
+  margin-top: 25px;
+}
+.box:first-child {
+  margin-top: 0;
+}
+.timer {
+  background-color: var(--roxo-escuro);
+  color: var(--lilas-escuro);
+  border-radius: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.timer span {
+  display: block;
+  font-size: 140px;
+  font-weight: 900;
+  text-align: center;
+}
+.timer span:nth-of-type(odd) {
+  min-width: 168px;
+}
+.box h2 {
+  color: var(--lilas-escuro);
+  font-weight: 900;
+  font-size: 28px;
+  margin-top: 0;
+}
+.controles {
+  display: flex;
+  justify-content: space-between;
+}
+.controles:nth-of-type(1) {
+  margin-bottom: 10px;
+}
+.controles button {
+  background-color: transparent;
+  color: var(--rosa);
+  font-size: 36px;
+  font-weight: 900;
+  border: none;
+  padding: 0;
+}
+.controles button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.controles > div > button:first-child {
+  margin-right: 20px;
+}
+footer {
+  position: fixed;
+  width: calc(800px - 50px);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 25px;
+
+  background-color: var(--lilas);
+  color: var(--lilas-escuro);
+  font-weight: 900;
+  font-size: 28px;
+  text-align: center;
+
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  /* border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px; */
+}
